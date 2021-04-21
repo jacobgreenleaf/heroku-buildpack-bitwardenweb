@@ -1,0 +1,8 @@
+#!/bin/bash
+
+BUILD_DIR=$1
+
+# TODO: Provide support for changing the version of the web-vault
+WEB_VAULT_VERSION="v2.19.0b"
+
+echo "--> Using bitwarden web-vault $WEB_VAULT_VERSION"
