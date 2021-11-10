@@ -4,8 +4,7 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-# TODO: Provide support for changing the version of the web-vault
-WEB_VAULT_VERSION="v2.19.0b"
+WEB_VAULT_VERSION="$(cat $BUILD_DIR/.bitwarden-web-version)"
 
 echo "--> Downloading bitwarden web-vault $WEB_VAULT_VERSION"
 
